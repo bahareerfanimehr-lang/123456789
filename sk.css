@@ -1,0 +1,182 @@
+body{
+  background-color:rgb(248, 193, 202);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  font-family: 'Playfair Display';
+
+}
+
+.div {
+    background-color: brown;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+     z-index: 1;
+     box-shadow:rgb(12, 12, 12);
+     box-shadow: 0 0 15px #ff4f87;
+    animation: glow 3s ease-in-out infinite alternate;
+    transition: transform 0.3s ease;
+    }
+
+.btn4{
+  display: flex;
+  height: 20%;                 
+  margin:0;
+  border-radius: 10px;
+  background-color:#C2C9CC;
+}
+
+.btn3 {
+    display: none;
+    height: 20%;
+    margin: 0;
+    border-radius: 10px;
+    gap: 4px;
+  background-color:#C2C9CC;
+
+}
+
+.txt{
+    display: none;
+    flex-direction: column;
+    font-family: 'Playfair Display';
+    color: white;
+}
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.heart {
+    position: absolute;
+    bottom: -70px;
+    color: #ff4f87;
+    font-size: 50px;
+    animation: float 7s linear infinite;
+}
+
+.heart:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.heart:nth-child(2) {
+    left: 25%;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(3) {
+    left: 40%;
+    animation-delay: 4s;
+}
+
+.heart:nth-child(4) {
+    left: 55%;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(5) {
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.heart:nth-child(6) {
+    left: 85%;
+    animation-delay: 5s;
+}
+
+.heart:nth-child(7) {
+    left: 95%;
+    animation-delay: 2.5s;
+}
+
+
+.heart:nth-child(8) {
+    left: 5%;
+    animation-delay: 1.5s;
+}
+
+.heart:nth-child(9) {
+    left: 20%;
+    animation-delay: 3.5s;
+}
+
+.heart:nth-child(10) {
+    left: 35%;
+    animation-delay: 5.5s;
+}
+
+.heart:nth-child(11) {
+    left: 50%;
+    animation-delay: 0.5s;
+}
+
+.heart:nth-child(12) {
+    left: 65%;
+    animation-delay: 2.5s;
+}
+
+.heart:nth-child(13) {
+    left: 80%;
+    animation-delay: 4.5s;
+}
+
+.heart:nth-child(14) {
+    left: 92%;
+    animation-delay: 6s;
+}
+
+.heart:nth-child(15) {
+    left: 45%;
+    animation-delay: 7s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #ff4f87;
+    }
+
+    50% {
+        box-shadow: 0 0 30px #ff1493,
+                    0 0 45px #ff69b4;
+    }
+
+    100% {
+        box-shadow: 0 0 15px #ff85a2;
+    }
+}
+
+.div:hover {
+    transform: scale(1.05);
+}
